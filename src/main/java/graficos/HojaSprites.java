@@ -15,8 +15,8 @@ import javax.imageio.ImageIO;
  */
 public class HojaSprites {
     public final int[] pixeles;
-    public final int ancho;
-    public final int alto;
+    private final int ancho;
+    private final int alto;
     
     public HojaSprites(final String ruta, final int ancho, final int alto) {
         this.ancho = ancho;
@@ -31,4 +31,13 @@ public class HojaSprites {
         }
 
     }
+    
+    public int getAncho() {
+        return ancho;
+    }
+
+    public int getAlto() {
+        return alto;
+    }
+    
 }
